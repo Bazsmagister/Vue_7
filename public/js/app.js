@@ -1922,11 +1922,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log("Component mounted.");
   }
 });
 
@@ -37314,13 +37312,11 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-md-8" }, [
           _c("div", { staticClass: "card" }, [
             _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
+              _vm._v("Example Component Hi there fdafsdfa")
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
+              _vm._v("I'm an example component. Hi there fadfasdf")
             ])
           ])
         ])
@@ -49533,6 +49529,41 @@ var app2 = new Vue({
   el: "#app-2",
   data: {
     message: "You loaded this page on " + new Date().toLocaleString()
+  }
+});
+var app3 = new Vue({
+  el: "#app-3",
+  data: {
+    seen: true
+  }
+});
+var app4 = new Vue({
+  el: "#app-4",
+  data: {
+    todos: [{
+      text: "Learn JavaScript"
+    }, {
+      text: "Learn Vue"
+    }, {
+      text: "Build something awesome"
+    }]
+  }
+});
+var app5 = new Vue({
+  el: "#app-5",
+  data: {
+    message: "Hello Vue.js!"
+  },
+  methods: {
+    reverseMessage: function reverseMessage() {
+      this.message = this.message.split("").reverse().join("");
+    }
+  }
+});
+var app6 = new Vue({
+  el: "#app-6",
+  data: {
+    message: "Hello Vue!"
   }
 });
 

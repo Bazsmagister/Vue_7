@@ -94,16 +94,29 @@
                 </span>
             </div>
 
-            <div class="links">
-                <a href="https://laravel.com/docs">Docs</a>
-                <a href="https://laracasts.com">Laracasts</a>
-                <a href="https://laravel-news.com">News</a>
-                <a href="https://blog.laravel.com">Blog</a>
-                <a href="https://nova.laravel.com">Nova</a>
-                <a href="https://forge.laravel.com">Forge</a>
-                <a href="https://vapor.laravel.com">Vapor</a>
-                <a href="https://github.com/laravel/laravel">GitHub</a>
+            <div id="app-3">
+                <span v-if="seen">Now you see me</span>
             </div>
+
+            <div id="app-4">
+                <ol>
+                    <li v-for="todo in todos">
+                        @{{ todo.text }}
+                    </li>
+                </ol>
+            </div>
+
+            <div id="app-5">
+                <p>@{{ message }}</p>
+                <button v-on:click="reverseMessage">Reverse Message</button>
+            </div>
+
+            <div id="app-6">
+                <p>@{{ message }}</p>
+                <input v-model="message">
+            </div>
+
+
         </div>
     </div>
     <script src="js/app.js"></script>
