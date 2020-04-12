@@ -105,7 +105,15 @@
                     </li>
                 </ol>
             </div>
+            /*
+            <div id="app-4">
+                <ol>
+                    <li v-for="todo in todos" v-text="todo">
 
+                    </li>
+                </ol>
+            </div>
+            */
             <div id="app-5">
                 <p>@{{ message }}</p>
                 <button v-on:click="reverseMessage">Reverse Message</button>

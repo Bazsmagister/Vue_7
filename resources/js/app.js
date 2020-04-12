@@ -30,7 +30,7 @@ Vue.component(
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
+var app = new Vue({
     el: "#app",
     data: {
         message: "Hello Wue and world "
