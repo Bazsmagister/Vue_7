@@ -24,6 +24,8 @@ Vue.component(
     require("./components/ExampleComponent.vue").default
 );
 Vue.component('welcome', require('./components/Welcome.vue').default);
+Vue.component('page', require('./components/Page.vue').default);
+
 
 
 /**

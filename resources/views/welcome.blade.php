@@ -84,7 +84,7 @@
 
         <div class="content">
             <div id="app">
-                <welcome></welcome>
+                <welcome :title="'{{$title}}'"></welcome>
             </div>
 
             <div id="app-2">
