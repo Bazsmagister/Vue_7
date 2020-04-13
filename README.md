@@ -15,3 +15,5 @@ Using this blog's source
 https://blog.pusher.com/why-vuejs-laravel/?fbclid=IwAR3vWPRbLS375rs2YYNDboTrqJDfwNW267_9cTq-1yhOxVoYN1nYaOLg9bI
 
 If I add some lines here, is it change on my computer also without git pull?
+
+It needs git pull. But gives no feedback. Interesting. 
