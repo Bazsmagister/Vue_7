@@ -83,8 +83,8 @@
         @endif
 
         <div class="content">
-            <div id="app" class="title m-b-md">
-                @{{ message }}
+            <div id="app">
+                <welcome></welcome>
             </div>
 
             <div id="app-2">
