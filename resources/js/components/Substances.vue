@@ -10,7 +10,7 @@
         </tr>
       </thead>
       <tbody>
-        <template v-for="substance in substances">
+        <!--  <template v-for="substance in substances">
           <tr v-bind:key="substance.id">
             <td>{{ substance.id }}</td>
             <td>{{ substance.INN }}</td>
@@ -18,7 +18,7 @@
 
             <td>Action buttons</td>
           </tr>
-        </template>
+        </template> -->
       </tbody>
     </table>
     <button class="btn btn-dark" @click="getsubstances()"></button>
@@ -27,25 +27,5 @@
 
 <script>
 import axios from "axios";
-export default {
-    data: function() {
-  return {
-    substances: {}
-  },
-
-  mounted() {
-    try {
-      const response = axios.get("http://localhost:8000/api/substances");
-      this.substances = response.data.data;
-      console.log(response.data);
-      //this.isLoading = false;
-    } catch (e) {
-      // handle the authentication error here
-    }
-
-   
-  }
-}
-}
-
+export default {};
 </script>

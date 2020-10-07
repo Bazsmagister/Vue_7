@@ -1973,9 +1973,41 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Substances.vue?vue&type=script&lang=js& ***!
   \*********************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\Legion\\code\\Vue_7\\resources\\js\\components\\Substances.vue: Unexpected token, expected \";\" (36:12)\n\n\u001b[0m \u001b[90m 34 | \u001b[39m  }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 | \u001b[39m  mounted() {\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 | \u001b[39m    \u001b[36mtry\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 38 | \u001b[39m      \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m axios\u001b[33m.\u001b[39mget(\u001b[32m\"http://localhost:8000/api/substances\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 39 | \u001b[39m      \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubstances \u001b[33m=\u001b[39m response\u001b[33m.\u001b[39mdata\u001b[33m.\u001b[39mdata\u001b[33m;\u001b[39m\u001b[0m\n    at Parser._raise (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:766:17)\n    at Parser.raiseWithData (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:759:17)\n    at Parser.raise (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:753:17)\n    at Parser.unexpected (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:8966:16)\n    at Parser.semicolon (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:8948:40)\n    at Parser.parseReturnStatement (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11801:12)\n    at Parser.parseStatementContent (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11479:21)\n    at Parser.parseStatement (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11431:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:12013:25)\n    at Parser.parseBlockBody (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11999:10)\n    at Parser.parseBlock (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11983:10)\n    at Parser.parseFunctionBody (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10963:24)\n    at Parser.parseFunctionBodyAndFinish (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10946:10)\n    at C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:12153:12\n    at Parser.withTopicForbiddingContext (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11272:14)\n    at Parser.parseFunction (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:12152:10)\n    at Parser.parseFunctionOrFunctionSent (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10377:17)\n    at Parser.parseExprAtom (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10202:21)\n    at Parser.parseExprSubscripts (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9844:23)\n    at Parser.parseUpdate (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9824:21)\n    at Parser.parseMaybeUnary (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9813:17)\n    at Parser.parseExprOps (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9683:23)\n    at Parser.parseMaybeConditional (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9657:23)\n    at Parser.parseMaybeAssign (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9620:21)\n    at C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9586:39\n    at Parser.allowInAnd (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11303:12)\n    at Parser.parseMaybeAssignAllowIn (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9586:17)\n    at Parser.parseObjectProperty (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10816:101)\n    at Parser.parseObjPropValue (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10841:100)\n    at Parser.parsePropertyDefinition (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10772:10)\n    at Parser.parseObjectLike (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10664:25)\n    at Parser.parseExprAtom (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10198:23)\n    at Parser.parseExprSubscripts (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9844:23)\n    at Parser.parseUpdate (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9824:21)\n    at Parser.parseMaybeUnary (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9813:17)\n    at Parser.parseExprOps (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9683:23)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -38386,29 +38418,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("table", { staticClass: "table" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "tbody",
-        [
-          _vm._l(_vm.substances, function(substance) {
-            return [
-              _c("tr", { key: substance.id }, [
-                _c("td", [_vm._v(_vm._s(substance.id))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(substance.INN))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(substance.mechanism))]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Action buttons")])
-              ])
-            ]
-          })
-        ],
-        2
-      )
-    ]),
+    _vm._m(0),
     _vm._v(" "),
     _c("button", {
       staticClass: "btn btn-dark",
@@ -38425,16 +38435,20 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", [_vm._v("ID")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Name")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Mechanism")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Action")])
-      ])
+    return _c("table", { staticClass: "table" }, [
+      _c("thead", [
+        _c("tr", [
+          _c("th", [_vm._v("ID")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("Name")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("Mechanism")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("Action")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("tbody")
     ])
   }
 ]
@@ -50746,6 +50760,21 @@ var app6 = new Vue({
     message: "Hello Vue!"
   }
 });
+var app6 = new Vue({
+  el: "#app-7",
+  data: function data() {
+    return {
+      substances: {}
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    var response = axios.get("http://localhost:8000/api/substances").then(function (response) {
+      return _this.substances = response;
+    });
+  }
+});
 
 /***/ }),
 
@@ -50954,15 +50983,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************************!*\
   !*** ./resources/js/components/Substances.vue ***!
   \************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Substances_vue_vue_type_template_id_fa8f47a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Substances.vue?vue&type=template&id=fa8f47a4& */ "./resources/js/components/Substances.vue?vue&type=template&id=fa8f47a4&");
 /* harmony import */ var _Substances_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Substances.vue?vue&type=script&lang=js& */ "./resources/js/components/Substances.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Substances_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Substances_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -50992,7 +51020,7 @@ component.options.__file = "resources/js/components/Substances.vue"
 /*!*************************************************************************!*\
   !*** ./resources/js/components/Substances.vue?vue&type=script&lang=js& ***!
   \*************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

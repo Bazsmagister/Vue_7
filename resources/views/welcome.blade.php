@@ -124,6 +124,14 @@
                 <input v-model="message">
             </div>
 
+            <div id="app-7">
+                <div>Hi</div>
+               <div
+               v-for="substance in substances"
+               >@{{ substance}}
+            </div>
+               
+            </div>
 
         </div>
     </div>

@@ -89,3 +89,17 @@ var app6 = new Vue({
         message: "Hello Vue!"
     }
 });
+
+var app6 = new Vue({
+    el: "#app-7",
+    data() {
+        return {
+            substances: {}
+        };
+    },
+    mounted() {
+        const response = axios
+            .get("http://localhost:8000/api/substances")
+            .then(response => (this.substances = response));
+    }
+});
