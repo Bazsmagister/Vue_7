@@ -1973,82 +1973,9 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Substances.vue?vue&type=script&lang=js& ***!
   \*********************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: {
-    substances: {}
-  },
-  mounted: function mounted() {
-    console.log("Substances component mounted.");
-    var response = axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("http://localhost:8000/api/substances");
-    this.substances = response.data.data;
-    alert(this.substances); // fetch("http://localhost:8000/api/substances").then(response => {
-    //     this.substances = response.data;
-    //     console.log(response.data);
-    // });
-    //alert(data);
-    //this.substances = response.data;
-    //this.substances = response.data.data;
-    //this.isLoading = false;
-  },
-  methods: {
-    getsubstances: function getsubstances() {
-      var _this = this;
-
-      //axios.get("localhost:8000/api/substances");
-      fetch("http://localhost:8000/api/substances").then(function (response) {
-        _this.substances = response.data;
-        console.log(response.data);
-      })["catch"](function (error) {
-        return console.error(error);
-      }); //alert(this.substances);
-      // this.substances = response.data;
-      //this.substances = response.data.data;
-    }
-  } // async created() {
-  //     try {
-  //         const response = await axios.get("http://localhost:8000/api/substances");
-  //         this.substances = response.data.data;
-  //         this.isLoading = false;
-  //     } catch (e) {
-  //         // handle the authentication error here
-  //     }
-  // }
-
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\Legion\\code\\Vue_7\\resources\\js\\components\\Substances.vue: Unexpected token, expected \";\" (36:12)\n\n\u001b[0m \u001b[90m 34 | \u001b[39m  }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 | \u001b[39m  mounted() {\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 | \u001b[39m    \u001b[36mtry\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 38 | \u001b[39m      \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m axios\u001b[33m.\u001b[39mget(\u001b[32m\"http://localhost:8000/api/substances\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 39 | \u001b[39m      \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubstances \u001b[33m=\u001b[39m response\u001b[33m.\u001b[39mdata\u001b[33m.\u001b[39mdata\u001b[33m;\u001b[39m\u001b[0m\n    at Parser._raise (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:766:17)\n    at Parser.raiseWithData (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:759:17)\n    at Parser.raise (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:753:17)\n    at Parser.unexpected (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:8966:16)\n    at Parser.semicolon (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:8948:40)\n    at Parser.parseReturnStatement (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11801:12)\n    at Parser.parseStatementContent (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11479:21)\n    at Parser.parseStatement (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11431:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:12013:25)\n    at Parser.parseBlockBody (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11999:10)\n    at Parser.parseBlock (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11983:10)\n    at Parser.parseFunctionBody (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10963:24)\n    at Parser.parseFunctionBodyAndFinish (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10946:10)\n    at C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:12153:12\n    at Parser.withTopicForbiddingContext (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11272:14)\n    at Parser.parseFunction (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:12152:10)\n    at Parser.parseFunctionOrFunctionSent (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10377:17)\n    at Parser.parseExprAtom (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10202:21)\n    at Parser.parseExprSubscripts (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9844:23)\n    at Parser.parseUpdate (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9824:21)\n    at Parser.parseMaybeUnary (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9813:17)\n    at Parser.parseExprOps (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9683:23)\n    at Parser.parseMaybeConditional (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9657:23)\n    at Parser.parseMaybeAssign (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9620:21)\n    at C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9586:39\n    at Parser.allowInAnd (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:11303:12)\n    at Parser.parseMaybeAssignAllowIn (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9586:17)\n    at Parser.parseObjectProperty (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10816:101)\n    at Parser.parseObjPropValue (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10841:100)\n    at Parser.parsePropertyDefinition (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10772:10)\n    at Parser.parseObjectLike (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10664:25)\n    at Parser.parseExprAtom (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:10198:23)\n    at Parser.parseExprSubscripts (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9844:23)\n    at Parser.parseUpdate (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9824:21)\n    at Parser.parseMaybeUnary (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9813:17)\n    at Parser.parseExprOps (C:\\Users\\Legion\\code\\Vue_7\\node_modules\\@babel\\parser\\lib\\index.js:9683:23)");
 
 /***/ }),
 
@@ -6517,7 +6444,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nhtml[data-v-524c0c0c],\nbody[data-v-524c0c0c] {\n  background-color: #fff;\n  color: #939b9f;\n  font-family: \"Raleway\", sans-serif;\n  font-weight: 100;\n  height: 100vh;\n  margin: 0;\n}\n.title[data-v-524c0c0c] {\n  font-size: 60px;\n}\n.subtitle[data-v-524c0c0c] {\n  font-size: 20px;\n}\n.full-height[data-v-524c0c0c] {\n  height: 100vh;\n}\n.flex-center[data-v-524c0c0c] {\n  align-items: center;\n  display: flex;\n  justify-content: center;\n}\n.position-ref[data-v-524c0c0c] {\n  position: relative;\n}\n.top-right[data-v-524c0c0c] {\n  position: absolute;\n  right: 10px;\n  top: 18px;\n}\n.content[data-v-524c0c0c] {\n  text-align: center;\n}\n.m-b-md[data-v-524c0c0c] {\n  margin-bottom: 30px;\n}\n", ""]);
+exports.push([module.i, "\nhtml[data-v-524c0c0c],\r\nbody[data-v-524c0c0c] {\r\n  background-color: #fff;\r\n  color: #939b9f;\r\n  font-family: \"Raleway\", sans-serif;\r\n  font-weight: 100;\r\n  height: 100vh;\r\n  margin: 0;\n}\n.title[data-v-524c0c0c] {\r\n  font-size: 60px;\n}\n.subtitle[data-v-524c0c0c] {\r\n  font-size: 20px;\n}\n.full-height[data-v-524c0c0c] {\r\n  height: 100vh;\n}\n.flex-center[data-v-524c0c0c] {\r\n  align-items: center;\r\n  display: flex;\r\n  justify-content: center;\n}\n.position-ref[data-v-524c0c0c] {\r\n  position: relative;\n}\n.top-right[data-v-524c0c0c] {\r\n  position: absolute;\r\n  right: 10px;\r\n  top: 18px;\n}\n.content[data-v-524c0c0c] {\r\n  text-align: center;\n}\n.m-b-md[data-v-524c0c0c] {\r\n  margin-bottom: 30px;\n}\r\n", ""]);
 
 // exports
 
@@ -6536,7 +6463,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nhtml[data-v-51777872],\nbody[data-v-51777872] {\n    background-color: #fff;\n    color: #636b6f;\n    font-family: \"Raleway\", sans-serif;\n    font-weight: 100;\n    height: 100vh;\n    margin: 0;\n}\n.full-height[data-v-51777872] {\n    height: 100vh;\n}\n.flex-center[data-v-51777872] {\n    align-items: center;\n    display: flex;\n    justify-content: center;\n}\n.position-ref[data-v-51777872] {\n    position: relative;\n}\n.top-right[data-v-51777872] {\n    position: absolute;\n    right: 10px;\n    top: 18px;\n}\n.content[data-v-51777872] {\n    text-align: center;\n}\n.title[data-v-51777872] {\n    font-size: 30px;\n}\n.links > a[data-v-51777872] {\n    color: #636b6f;\n    padding: 0 25px;\n    font-size: 12px;\n    font-weight: 600;\n    letter-spacing: 0.1rem;\n    text-decoration: none;\n    text-transform: uppercase;\n}\n.m-b-md[data-v-51777872] {\n    margin-top: 10px;\n\n    margin-bottom: 10px;\n}\n", ""]);
+exports.push([module.i, "\nhtml[data-v-51777872],\r\nbody[data-v-51777872] {\r\n    background-color: #fff;\r\n    color: #636b6f;\r\n    font-family: \"Raleway\", sans-serif;\r\n    font-weight: 100;\r\n    height: 100vh;\r\n    margin: 0;\n}\n.full-height[data-v-51777872] {\r\n    height: 100vh;\n}\n.flex-center[data-v-51777872] {\r\n    align-items: center;\r\n    display: flex;\r\n    justify-content: center;\n}\n.position-ref[data-v-51777872] {\r\n    position: relative;\n}\n.top-right[data-v-51777872] {\r\n    position: absolute;\r\n    right: 10px;\r\n    top: 18px;\n}\n.content[data-v-51777872] {\r\n    text-align: center;\n}\n.title[data-v-51777872] {\r\n    font-size: 30px;\n}\n.links > a[data-v-51777872] {\r\n    color: #636b6f;\r\n    padding: 0 25px;\r\n    font-size: 12px;\r\n    font-weight: 600;\r\n    letter-spacing: 0.1rem;\r\n    text-decoration: none;\r\n    text-transform: uppercase;\n}\n.m-b-md[data-v-51777872] {\r\n    margin-top: 10px;\r\n\r\n    margin-bottom: 10px;\n}\r\n", ""]);
 
 // exports
 
@@ -51027,14 +50954,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************************!*\
   !*** ./resources/js/components/Substances.vue ***!
   \************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Substances_vue_vue_type_template_id_fa8f47a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Substances.vue?vue&type=template&id=fa8f47a4& */ "./resources/js/components/Substances.vue?vue&type=template&id=fa8f47a4&");
 /* harmony import */ var _Substances_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Substances.vue?vue&type=script&lang=js& */ "./resources/js/components/Substances.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Substances_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Substances_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -51064,7 +50992,7 @@ component.options.__file = "resources/js/components/Substances.vue"
 /*!*************************************************************************!*\
   !*** ./resources/js/components/Substances.vue?vue&type=script&lang=js& ***!
   \*************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51197,8 +51125,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/bazs/code/Vue_7/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/bazs/code/Vue_7/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Legion\code\Vue_7\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Legion\code\Vue_7\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
