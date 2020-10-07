@@ -60,3 +60,11 @@ A resource class represents a single model that needs to be transformed into a J
 API Resource is a transformation layer. if you don't want to output eloquent models 1:1.
 
 the data wrapping is also a plus, if you want to output previous/next... links and/or some other metadata in the result
+
+---
+
+??You have to enable CORS so you can access your API from the frontend application:
+composer require barryvdh/laravel-cors
+Testing the POST/PUT/DELETE requests is a bit more involved and requires an external tool (for example, cURL or Postman). You also need to make sure that the following headers are sent with each request:
+Accept: "application/json"
+This header tells Laravel to return any validation errors in JSON format.

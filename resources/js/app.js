@@ -23,10 +23,10 @@ Vue.component(
     "example-component",
     require("./components/ExampleComponent.vue").default
 );
-Vue.component('welcome', require('./components/Welcome.vue').default);
-Vue.component('page', require('./components/Page.vue').default);
+Vue.component("welcome", require("./components/Welcome.vue").default);
+Vue.component("page", require("./components/Page.vue").default);
 
-
+Vue.component("substances", require("./components/Substances.vue").default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -35,8 +35,7 @@ Vue.component('page', require('./components/Page.vue').default);
  */
 
 var app = new Vue({
-    el: "#app",
-
+    el: "#app"
 });
 
 var app2 = new Vue({
@@ -56,7 +55,8 @@ var app3 = new Vue({
 var app4 = new Vue({
     el: "#app-4",
     data: {
-        todos: [{
+        todos: [
+            {
                 text: "Learn JavaScript"
             },
             {
@@ -74,7 +74,7 @@ var app5 = new Vue({
         message: "Hello Vue.js!"
     },
     methods: {
-        reverseMessage: function () {
+        reverseMessage: function() {
             this.message = this.message
                 .split("")
                 .reverse()

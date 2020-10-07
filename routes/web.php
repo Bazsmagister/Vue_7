@@ -1,10 +1,11 @@
 <?php
 
+use App\Substance;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Resources\Substance as SubstanceResource;
 use App\Http\Resources\SubstanceCollection as SubstanceCollectionResource;
-
-use App\Substance;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,14 +51,12 @@ Route::get('/page', function () {
     );
 });
 
-//moved to routes/api
+//moved to routes/api but it also work here, but without api in front of the url.
 //Route::apiResource('substances', 'SubstanceController');
 
 // Route::get('/substances', function () {
 //     return SubstanceResource::collection(Substance::all());
 // });
-
-
 
 Route::get('/substances/2', function () {
     return new SubstanceResource(Substance::find(2));

@@ -29,8 +29,9 @@ class Substance extends JsonResource
 
         return [
 
-            'name' => $this->INN,
-            'effect' => $this->mechanism,
+            'id' => $this->id,
+            'INN' => $this->INN,
+            'mechanism' => $this->mechanism,
 
         ];
     }
