@@ -172,6 +172,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["title"]
 });
@@ -1488,6 +1489,10 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("a", { attrs: { href: "/substanceswithotherdatas" } }, [
         _vm._v("substanceswithotherdatas")
+      ]),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "/api/substances" } }, [
+        _vm._v("/api/substances")
       ])
     ])
   }

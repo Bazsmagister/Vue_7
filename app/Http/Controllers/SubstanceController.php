@@ -16,7 +16,7 @@ class SubstanceController extends Controller
      */
     public function index()
     {
-        //
+        return Substance::all();
     }
 
     /**
@@ -27,7 +27,10 @@ class SubstanceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $substance = Substance::create($request->all());
+
+        return response()->json($substance, 201);
+        //201: Object created. Useful for the store actions.
     }
 
     /**
@@ -38,7 +41,7 @@ class SubstanceController extends Controller
      */
     public function show(Substance $substance)
     {
-        //
+        return $substance;
     }
 
     /**
@@ -50,7 +53,10 @@ class SubstanceController extends Controller
      */
     public function update(Request $request, Substance $substance)
     {
-        //
+        $substance->update($request->all());
+
+        return response()->json($substance, 200);
+        //200: OK. The standard success code and default option.
     }
 
     /**
@@ -61,6 +67,9 @@ class SubstanceController extends Controller
      */
     public function destroy(Substance $substance)
     {
-        //
+        $substance->delete();
+
+        return response()->json(null, 204);
+        //204: No content. When an action was executed successfully, but there is no content to return.
     }
 }

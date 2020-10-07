@@ -2,8 +2,9 @@
 
 namespace App\Exceptions;
 
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
+use Illuminate\Database\Eloquent\ModelNotFoundException as ModelNotFoundException;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
 {
@@ -50,6 +51,17 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
+        // // This will replace our 404 response with
+        // // a JSON response.
+        // if ($exception ->getPrevious() instanceof ModelNotFoundException &&
+        // $request->wantsJson()) {
+        //     return response()->json([
+        //         // 'error' => 'Resource not found',
+        //         'data' => 'Resource not found'
+
+        //     ], 404);
+        // }
+
         return parent::render($request, $exception);
     }
 }

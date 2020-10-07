@@ -50,12 +50,14 @@ Route::get('/page', function () {
     );
 });
 
+//moved to routes/api
+//Route::apiResource('substances', 'SubstanceController');
+
+// Route::get('/substances', function () {
+//     return SubstanceResource::collection(Substance::all());
+// });
 
 
-
-Route::get('/substances', function () {
-    return SubstanceResource::collection(Substance::all());
-});
 
 Route::get('/substances/2', function () {
     return new SubstanceResource(Substance::find(2));

@@ -11,6 +11,7 @@
                 <a href="/substances">Substances json</a>
                 <a href="/substances/2">Substances/2 json</a>
                 <a href="/substanceswithotherdatas">substanceswithotherdatas</a>
+                <a href="/api/substances">/api/substances</a>
             </div>
         </div>
     </div>

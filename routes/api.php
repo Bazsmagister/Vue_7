@@ -17,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResource('substances', 'SubstanceController');
+// Route::apiResource('substances', 'SubstanceController')->except('update', 'delete', 'store');
+
+
+// Route::group(['middleware' => 'auth:api'], function () {
+//     Route::get('substances', 'SubstanceController@index');
+//     Route::get('substances/{substance}', 'SubstanceController@show');
+//     Route::post('substances', 'SubstanceController@store');
+//     Route::put('substances/{substance}', 'SubstanceController@update');
+//     Route::delete('substances/{substance}', 'SubstanceController@delete');
+// });
