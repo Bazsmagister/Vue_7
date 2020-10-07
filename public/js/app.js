@@ -1922,6 +1922,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log("Component mounted.");
@@ -1971,6 +1977,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -6440,7 +6451,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nhtml[data-v-51777872],\nbody[data-v-51777872] {\n  background-color: #fff;\n  color: #636b6f;\n  font-family: \"Raleway\", sans-serif;\n  font-weight: 100;\n  height: 100vh;\n  margin: 0;\n}\n.full-height[data-v-51777872] {\n  height: 100vh;\n}\n.flex-center[data-v-51777872] {\n  align-items: center;\n  display: flex;\n  justify-content: center;\n}\n.position-ref[data-v-51777872] {\n  position: relative;\n}\n.top-right[data-v-51777872] {\n  position: absolute;\n  right: 10px;\n  top: 18px;\n}\n.content[data-v-51777872] {\n  text-align: center;\n}\n.title[data-v-51777872] {\n  font-size: 84px;\n}\n.links > a[data-v-51777872] {\n  color: #636b6f;\n  padding: 0 25px;\n  font-size: 12px;\n  font-weight: 600;\n  letter-spacing: 0.1rem;\n  text-decoration: none;\n  text-transform: uppercase;\n}\n.m-b-md[data-v-51777872] {\n  margin-bottom: 30px;\n}\n", ""]);
+exports.push([module.i, "\nhtml[data-v-51777872],\nbody[data-v-51777872] {\n    background-color: #fff;\n    color: #636b6f;\n    font-family: \"Raleway\", sans-serif;\n    font-weight: 100;\n    height: 100vh;\n    margin: 0;\n}\n.full-height[data-v-51777872] {\n    height: 100vh;\n}\n.flex-center[data-v-51777872] {\n    align-items: center;\n    display: flex;\n    justify-content: center;\n}\n.position-ref[data-v-51777872] {\n    position: relative;\n}\n.top-right[data-v-51777872] {\n    position: absolute;\n    right: 10px;\n    top: 18px;\n}\n.content[data-v-51777872] {\n    text-align: center;\n}\n.title[data-v-51777872] {\n    font-size: 30px;\n}\n.links > a[data-v-51777872] {\n    color: #636b6f;\n    padding: 0 25px;\n    font-size: 12px;\n    font-weight: 600;\n    letter-spacing: 0.1rem;\n    text-decoration: none;\n    text-transform: uppercase;\n}\n.m-b-md[data-v-51777872] {\n    margin-top: 10px;\n\n    margin-bottom: 10px;\n}\n", ""]);
 
 // exports
 
@@ -38277,11 +38288,15 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-md-8" }, [
           _c("div", { staticClass: "card" }, [
             _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component Hi there fdafsdfa")
+              _vm._v(
+                "\n                    Example Component: This is the card-header of the\n                    component\n                "
+              )
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
-              _vm._v("I'm an example component. Hi there fadfasdf")
+              _vm._v(
+                "\n                    I'm an example component: This is the card-body of the\n                    component\n                "
+              )
             ])
           ])
         ])
@@ -38372,16 +38387,24 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "links" }, [
-      _c("a", { attrs: { href: "https://laravel.com/docs" } }, [
-        _vm._v("View Laravel Docs")
+      _c("a", { attrs: { href: "/" } }, [_vm._v("welcome")]),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "/page" } }, [_vm._v("/page site")]),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "/home" } }, [_vm._v("Home, if authenticated")]),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "/herecanbeanything" } }, [
+        _vm._v("HereCanBeAnything")
       ]),
       _vm._v(" "),
-      _c("a", { attrs: { href: "https://vuejs.org/v2/guide/" } }, [
-        _vm._v("View Vue Docs")
+      _c("a", { attrs: { href: "/substances" } }, [_vm._v("Substances json")]),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "/substances/2" } }, [
+        _vm._v("Substances/2 json")
       ]),
       _vm._v(" "),
-      _c("a", { attrs: { href: "https://laracasts.com" } }, [
-        _vm._v("Watch Videos")
+      _c("a", { attrs: { href: "/substanceswithotherdatas" } }, [
+        _vm._v("substanceswithotherdatas")
       ])
     ])
   }
