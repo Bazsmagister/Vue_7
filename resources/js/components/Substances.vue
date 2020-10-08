@@ -1,13 +1,18 @@
 <template>
     <div class="container">
         <ul>
-            <li v-for="substance in substances" :key="substance.id">
+            <li v-for="substance in substances" :key="substance.INN">
+                {{ substance }}
+                <hr />
+                <!-- works -->
                 {{ substance.data }}
-                {{ substance.INN }}
+
+                <!-- {{ substance.INN }} -->
             </li>
         </ul>
         <ul>
             <li>
+                <!-- works -->
                 {{ substances.data.data }}
             </li>
         </ul>

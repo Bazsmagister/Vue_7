@@ -2030,6 +2030,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -38488,14 +38493,11 @@ var render = function() {
     _c(
       "ul",
       _vm._l(_vm.substances, function(substance) {
-        return _c("li", { key: substance.id }, [
-          _vm._v(
-            "\n            " +
-              _vm._s(substance.data) +
-              "\n            " +
-              _vm._s(substance.INN) +
-              "\n        "
-          )
+        return _c("li", { key: substance.INN }, [
+          _vm._v("\n            " + _vm._s(substance) + "\n            "),
+          _c("hr"),
+          _vm._v(" "),
+          _vm._v("\n            " + _vm._s(substance.data) + "\n\n            ")
         ])
       }),
       0
