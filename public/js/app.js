@@ -2035,6 +2035,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
