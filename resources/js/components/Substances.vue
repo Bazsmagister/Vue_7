@@ -1,31 +1,35 @@
 <template>
-  <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Mechanism</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!--  <template v-for="substance in substances">
-          <tr v-bind:key="substance.id">
-            <td>{{ substance.id }}</td>
-            <td>{{ substance.INN }}</td>
-            <td>{{ substance.mechanism }}</td>
+    <div class="container">
+        <ul>
+            <li v-for="substance in substances" :key="substance.id">
+                {{ substance.data }}
+                {{ substance.INN }}
+            </li>
+        </ul>
+        <ul>
+            <li>
+                {{ substances.data.data }}
+            </li>
+        </ul>
 
-            <td>Action buttons</td>
-          </tr>
-        </template> -->
-      </tbody>
-    </table>
-    <button class="btn btn-dark" @click="getsubstances()"></button>
-  </div>
+        <!-- <button class="btn btn-dark" @click="getsubstances()"></button> -->
+    </div>
 </template>
 
 <script>
 import axios from "axios";
-export default {};
+export default {
+    data() {
+        return {
+            substances: {}
+        };
+    },
+    mounted() {
+        axios
+            .get("http://localhost:8000/api/substances")
+            .then(response => (this.substances = response));
+        //console.log(this.substances.INN);
+        console.log(this.substances);
+    }
+};
 </script>

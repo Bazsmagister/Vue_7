@@ -17,6 +17,8 @@ class SubstanceController extends Controller
     public function index()
     {
         return Substance::all();
+
+        //return $substances =  Substance::all();
     }
 
     /**

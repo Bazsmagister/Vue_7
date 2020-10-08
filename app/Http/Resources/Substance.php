@@ -12,7 +12,7 @@ class Substance extends JsonResource
      *
      * @var bool
      */
-    public $preserveKeys = true;
+    //public $preserveKeys = true;
 
     //public static $wrap = 'user';
 

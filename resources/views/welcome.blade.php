@@ -18,12 +18,12 @@
             color: #636b6f;
             font-family: 'Nunito', sans-serif;
             font-weight: 200;
-            height: 100vh;
-            margin: 0;
+            height: 90vh;
+            margin: 10px;
         }
 
         .full-height {
-            height: 100vh;
+            height: 90vh;
         }
 
         .flex-center {
@@ -47,7 +47,7 @@
         }
 
         .title {
-            font-size: 84px;
+            font-size: 30px;
         }
 
         .links>a {
@@ -84,8 +84,10 @@
 
         <div class="content">
             <div id="app">
-                <welcome :title="'{{$title}}'"></welcome>
+                <navbar :title="'{{$title}}'"></navbar>
             </div>
+
+            <hr>
 
             <div id="app-2">
                 <span v-bind:title="message">
@@ -93,10 +95,13 @@
                     to see my dynamically bound title!
                 </span>
             </div>
+            <hr>
 
             <div id="app-3">
-                <span v-if="seen">Now you see me</span>
+                <span v-if="seen">Now you see me, because this span has a seen v-if attribute</span>
             </div>
+
+            <hr>
 
             <div id="app-4">
                 <ol>
@@ -105,33 +110,59 @@
                     </li>
                 </ol>
             </div>
-            /*
-            <div id="app-4">
+            <hr>
+            <div id="app-9">
                 <ol>
-                    <li v-for="todo in todos" v-text="todo">
-
+                    <li v-for="todo in todos" v-text="todo.text">
                     </li>
                 </ol>
             </div>
-            */
+
+
+            <hr>
             <div id="app-5">
                 <p>@{{ message }}</p>
                 <button v-on:click="reverseMessage">Reverse Message</button>
             </div>
+
+            <hr>
 
             <div id="app-6">
                 <p>@{{ message }}</p>
                 <input v-model="message">
             </div>
 
+            <hr>
+
             <div id="app-7">
-                <div>Hi</div>
-               <div
-               v-for="substance in substances"
-               >@{{ substance}}
+                <ul>
+                    <li v-for="substance in substances">
+
+                        @{{ substance }}
+                        {{-- {{ substance}} --}}
+
+                        {{-- @{{ substance.data.mechanism}} --}}
+                    </li>
+
+                </ul>
             </div>
-               
+
+            <hr>
+
+            <div id="app-8">
+                <ul>
+                    <li v-for="substance in substances">
+
+                        @{{ substance }}
+                        {{-- {{ substance}} --}}
+
+                        {{-- @{{ substance.data.mechanism}} --}}
+                    </li>
+
+                </ul>
             </div>
+
+            <hr>
 
         </div>
     </div>

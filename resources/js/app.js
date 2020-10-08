@@ -23,7 +23,7 @@ Vue.component(
     "example-component",
     require("./components/ExampleComponent.vue").default
 );
-Vue.component("welcome", require("./components/Welcome.vue").default);
+Vue.component("navbar", require("./components/Navbar.vue").default);
 Vue.component("page", require("./components/Page.vue").default);
 
 Vue.component("substances", require("./components/Substances.vue").default);
@@ -68,6 +68,23 @@ var app4 = new Vue({
         ]
     }
 });
+
+var app9 = new Vue({
+    el: "#app-9",
+    data: {
+        todos: [
+            {
+                text: "Learn JavaScript"
+            },
+            {
+                text: "Learn Vue"
+            },
+            {
+                text: "Build something awesome"
+            }
+        ]
+    }
+});
 var app5 = new Vue({
     el: "#app-5",
     data: {
@@ -90,16 +107,48 @@ var app6 = new Vue({
     }
 });
 
-var app6 = new Vue({
-    el: "#app-7",
-    data() {
-        return {
-            substances: {}
-        };
-    },
-    mounted() {
-        const response = axios
-            .get("http://localhost:8000/api/substances")
-            .then(response => (this.substances = response));
-    }
-});
+// var app7 = new Vue({
+//     el: "#app-7",
+//     data() {
+//         return {
+//             substances: {}
+//         };
+//     },
+//     mounted() {
+//         const response = axios
+//             .get("http://localhost:8000/api/substances")
+//             .then(response => (this.substances = response));
+//         console.log(this.response);
+//         // .then(response => (this.substances.data = response)); not works
+//     }
+//     // mounted() {
+//     //     axios
+//     //         .get("http://localhost:8000/api/substances")
+//     //         .then(response => (this.substances = response));
+//     //     console.log(this.substances);
+//     //     // .then(response => (this.substances.data = response)); not works
+//     // }
+// });
+
+// var app8 = new Vue({
+//     el: "#app-8",
+//     data: {
+//         data: substances
+//     },
+//     mounted() {
+//         const response = axios
+//             .get("http://localhost:8000/api/substances")
+//             .then(response =>
+//                 (this.substances = response).console.log(this.substances)
+//             );
+//         // console.log(this.response);
+//         // .then(response => (this.substances.data = response)); not works
+//     }
+//     // mounted() {
+//     //     axios
+//     //         .get("http://localhost:8000/api/substances")
+//     //         .then(response => (this.substances = response));
+//     //     console.log(this.substances);
+//     //     // .then(response => (this.substances.data = response)); not works
+//     // }
+// });

@@ -29,12 +29,12 @@ body {
     color: #636b6f;
     font-family: "Raleway", sans-serif;
     font-weight: 100;
-    height: 100vh;
+    height: 95vh;
     margin: 0;
 }
 
 .full-height {
-    height: 100vh;
+    height: 60vh;
 }
 
 .flex-center {
@@ -44,7 +44,7 @@ body {
 }
 
 .position-ref {
-    position: relative;
+    /* position: relative; */
 }
 
 .top-right {
@@ -58,7 +58,7 @@ body {
 }
 
 .title {
-    font-size: 30px;
+    font-size: 60px;
 }
 
 .links > a {
@@ -72,7 +72,7 @@ body {
 }
 
 .m-b-md {
-    margin-top: 10px;
+    margin-top: 30px;
 
     margin-bottom: 10px;
 }

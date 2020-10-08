@@ -30,10 +30,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', function () {
     return view(
-        'welcome',
+        'welcome2',
         [
-                'title' => "An even cooler way to do the title"
-            ]
+            'title' => "An even cooler way to do the title !!!"
+        ]
     );
 });
 
@@ -54,9 +54,9 @@ Route::get('/page', function () {
 //moved to routes/api but it also work here, but without api in front of the url.
 //Route::apiResource('substances', 'SubstanceController');
 
-// Route::get('/substances', function () {
-//     return SubstanceResource::collection(Substance::all());
-// });
+Route::get('/substances', function () {
+    return SubstanceResource::collection(Substance::all());
+});
 
 Route::get('/substances/2', function () {
     return new SubstanceResource(Substance::find(2));
