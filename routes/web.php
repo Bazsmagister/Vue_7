@@ -30,12 +30,22 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', function () {
     return view(
-        'welcome3',
+        'welcome',
         [
             'title' => "An even cooler way to do the title !!!"
         ]
     );
 });
+
+Route::get('/substances', function () {
+    return view(
+        'substances',
+        [
+            'title' => "An even cooler way to do the title !!!"
+        ]
+    );
+});
+
 
 Route::get('/page', function () {
     return view(
@@ -43,9 +53,9 @@ Route::get('/page', function () {
         [
                 'title' => "Page 2 - A little about the Author",
                 'author' => json_encode([
-                        "name" => "Fisayo Afolayan",
-                        "role" => "Software Enginner",
-                        "code" => "Always keeping it clean"
+                        "name" => "My name",
+                        "role" => "My Role",
+                        "code" => "edoc"
                 ])
             ]
     );
@@ -54,9 +64,9 @@ Route::get('/page', function () {
 //moved to routes/api but it also work here, but without api in front of the url.
 //Route::apiResource('substances', 'SubstanceController');
 
-Route::get('/substances', function () {
-    return SubstanceResource::collection(Substance::all());
-});
+// Route::get('/substances', function () {
+//     return SubstanceResource::collection(Substance::all());
+// });
 
 Route::get('/substances/2', function () {
     return new SubstanceResource(Substance::find(2));

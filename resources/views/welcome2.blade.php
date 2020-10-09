@@ -6,7 +6,6 @@
 
 <example-component></example-component>
 
-<substances></substances>
 
 <hr>
 <hr>
@@ -16,7 +15,7 @@
 
     <example-component></example-component>
 
-    <substances></substances>
+
 </div>
 
 @endsection

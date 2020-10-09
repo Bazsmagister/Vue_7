@@ -6,9 +6,6 @@
                     <router-link :to="{ name: 'page' }" class="nav-link"
                         >Spa-Page</router-link
                     >
-                    <router-link :to="{ name: 'substances' }" class="nav-link"
-                        >Substances</router-link
-                    >
                 </ul>
             </div>
         </nav>

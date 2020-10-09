@@ -1,6 +1,6 @@
 ## About this repo
 
-Trying to play with laravel 7.1.1 and Vue.
+Trying to play with laravel 7.1.1 and Vue2,
 making some component, and play with them.
 For learing purpose.
 
@@ -60,3 +60,7 @@ A resource class represents a single model that needs to be transformed into a J
 API Resource is a transformation layer. if you don't want to output eloquent models 1:1.
 
 the data wrapping is also a plus, if you want to output previous/next... links and/or some other metadata in the result
+
+https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html
+
+https://laravel-news.com/building-a-flash-message-component-with-vue-js-and-tailwind-css

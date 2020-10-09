@@ -7,11 +7,17 @@
                 <a href="/page">/page site</a>
                 <a href="/home">Home, if authenticated</a>
 
+                <!--
+                <a href="/substances/2">Substances/2 json</a> -->
+                <a href="/substanceswithotherdatas"
+                    >substanceswithotherdatasLinksMeta</a
+                >
+                <a href="/api/substances">/api/substancesgivesbackjson</a>
+                <a href="/substances"
+                    >/substances_Using_Vue_to_v-for_substances
+                </a>
+
                 <a href="/herecanbeanything">HereCanBeAnything</a>
-                <a href="/substances">Substances json</a>
-                <a href="/substances/2">Substances/2 json</a>
-                <a href="/substanceswithotherdatas">substanceswithotherdatas</a>
-                <a href="/api/substances">/api/substances</a>
             </div>
         </div>
     </div>
@@ -29,12 +35,12 @@ body {
     color: #636b6f;
     font-family: "Raleway", sans-serif;
     font-weight: 100;
-    height: 95vh;
-    margin: 0;
+    height: 100vh;
+    margin-top: 30px;
 }
 
 .full-height {
-    height: 60vh;
+    height: 100vh;
 }
 
 .flex-center {
@@ -44,7 +50,7 @@ body {
 }
 
 .position-ref {
-    /* position: relative; */
+    position: relative;
 }
 
 .top-right {
@@ -58,12 +64,12 @@ body {
 }
 
 .title {
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .links > a {
     color: #636b6f;
-    padding: 0 25px;
+    padding: 25px 25px;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.1rem;

@@ -18,18 +18,13 @@
             color: #636b6f;
             font-family: 'Nunito', sans-serif;
             font-weight: 200;
-            height: 90vh;
+            height: 100vh;
             margin: 10px;
         }
 
         .full-height {
-            height: 90vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
+            height: 100vh;
+            :
         }
 
         .position-ref {
@@ -47,6 +42,7 @@
         }
 
         .title {
+            margin-top: 50px;
             font-size: 30px;
         }
 
@@ -132,35 +128,6 @@
                 <input v-model="message">
             </div>
 
-            <hr>
-
-            <div id="app-7">
-                <ul>
-                    <li v-for="substance in substances">
-
-                        @{{ substance }}
-                        {{-- {{ substance}} --}}
-
-                        {{-- @{{ substance.data.mechanism}} --}}
-                    </li>
-
-                </ul>
-            </div>
-
-            <hr>
-
-            <div id="app-8">
-                <ul>
-                    <li v-for="substance in substances">
-
-                        @{{ substance }}
-                        {{-- {{ substance}} --}}
-
-                        {{-- @{{ substance.data.mechanism}} --}}
-                    </li>
-
-                </ul>
-            </div>
 
             <hr>
 

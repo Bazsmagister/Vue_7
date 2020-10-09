@@ -8,6 +8,8 @@ require("./bootstrap");
 
 window.Vue = require("vue");
 
+window.Bus = new Vue();
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -26,11 +28,11 @@ Vue.component(
 Vue.component("navbar", require("./components/Navbar.vue").default);
 Vue.component("page", require("./components/Page.vue").default);
 
-Vue.component("substances", require("./components/Substances.vue").default);
-
 Vue.component("substances2", require("./components/Substances2.vue").default);
 
 Vue.component("flash", require("./components/Flash.vue").default);
+Vue.component("flash2", require("./components/Flash2.vue").default);
+Vue.component("trigger-form", require("./components/TriggerForm.vue").default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -120,26 +122,3 @@ var app7 = new Vue({
         // flash: require("./components/Flash.vue")
     }
 });
-
-// var app8 = new Vue({
-//     el: "#app-8",
-//     data: {
-//         data: substances
-//     },
-//     mounted() {
-//         const response = axios
-//             .get("http://localhost:8000/api/substances")
-//             .then(response =>
-//                 (this.substances = response).console.log(this.substances)
-//             );
-//         // console.log(this.response);
-//         // .then(response => (this.substances.data = response)); not works
-//     }
-//     // mounted() {
-//     //     axios
-//     //         .get("http://localhost:8000/api/substances")
-//     //         .then(response => (this.substances = response));
-//     //     console.log(this.substances);
-//     //     // .then(response => (this.substances.data = response)); not works
-//     // }
-// });

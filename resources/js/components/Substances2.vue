@@ -4,9 +4,6 @@
             <li v-for="substance in substances" :key="substance.id">
                 {{ substance.INN }} :
                 {{ substance.mechanism }}
-                <!-- works -->
-                <!-- {{ substance.data }} -->
-                <!-- {{ substance[0].INN }} -->
             </li>
         </ul>
     </div>

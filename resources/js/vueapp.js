@@ -6,7 +6,7 @@ Vue.use(VueRouter);
 import App from "./components/App";
 import Navbar from "./components/Navbar";
 import Page from "./components/Page";
-import Substances from "./components/Substances";
+import Substances2 from "./components/Substances2";
 
 const router = new VueRouter({
     mode: "history",
@@ -24,7 +24,7 @@ const router = new VueRouter({
                 }
             }
         },
-        { path: "/substances", name: "substances", component: Substances }
+        { path: "/substances2", name: "substances2", component: Substances2 }
     ]
 });
 const app = new Vue({

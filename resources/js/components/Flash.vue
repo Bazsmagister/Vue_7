@@ -1,6 +1,6 @@
 <template>
     <div class="alert alert-success" role="alert">
-        <strong>Success!</strong>
+        <strong> {{ message }}</strong>
         <!-- {{ message }} -->
     </div>
 </template>
@@ -12,6 +12,11 @@ export default {
         return {
             message: "Hello"
         };
+    },
+    mounted() {
+        setTimeout(() => {
+            this.message = null;
+        }, 5000);
     }
 };
 </script>
