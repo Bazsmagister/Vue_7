@@ -18,9 +18,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//Route::apiResource('substances', 'SubstanceController');
+Route::apiResource('substances', 'SubstanceController');
 //or
-Route::apiResource('substances', 'SubstanceResourceController');
+//Route::apiResource('substances', 'SubstanceResourceController');
 
 // Route::apiResource('substances', 'SubstanceController')->except('update', 'delete', 'store');
 

@@ -28,6 +28,10 @@ Vue.component("page", require("./components/Page.vue").default);
 
 Vue.component("substances", require("./components/Substances.vue").default);
 
+Vue.component("substances2", require("./components/Substances2.vue").default);
+
+Vue.component("flash", require("./components/Flash.vue").default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -107,28 +111,15 @@ var app6 = new Vue({
     }
 });
 
-// var app7 = new Vue({
-//     el: "#app-7",
-//     data() {
-//         return {
-//             substances: {}
-//         };
-//     },
-//     mounted() {
-//         const response = axios
-//             .get("http://localhost:8000/api/substances")
-//             .then(response => (this.substances = response));
-//         console.log(this.response);
-//         // .then(response => (this.substances.data = response)); not works
-//     }
-//     // mounted() {
-//     //     axios
-//     //         .get("http://localhost:8000/api/substances")
-//     //         .then(response => (this.substances = response));
-//     //     console.log(this.substances);
-//     //     // .then(response => (this.substances.data = response)); not works
-//     // }
-// });
+var app7 = new Vue({
+    el: "#app-7",
+    components: {
+        navbar: require("./components/Navbar.vue")
+        // substances: require("./components/Substances.vue")
+        // substances2: require("./components/Substances2.vue"),
+        // flash: require("./components/Flash.vue")
+    }
+});
 
 // var app8 = new Vue({
 //     el: "#app-8",

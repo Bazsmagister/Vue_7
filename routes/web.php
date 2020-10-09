@@ -30,7 +30,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', function () {
     return view(
-        'welcome2',
+        'welcome3',
         [
             'title' => "An even cooler way to do the title !!!"
         ]
