@@ -64,3 +64,7 @@ the data wrapping is also a plus, if you want to output previous/next... links a
 https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html
 
 https://laravel-news.com/building-a-flash-message-component-with-vue-js-and-tailwind-css
+
+---
+
+composer require barryvdh/laravel-debugbar --dev
