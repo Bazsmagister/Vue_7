@@ -59,6 +59,34 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+
+
+        li {
+            list-style-type: none;
+            position: relative;
+            margin: 2px;
+            padding: 0.5em 0.5em 0.5em 2em;
+            background: lightgrey;
+            font-family: sans-serif;
+        }
+
+        li.done {
+            background: #CCFF99;
+        }
+
+        li.done::before {
+            content: '';
+            position: absolute;
+            border-color: #009933;
+            border-style: solid;
+            border-width: 0 0.3em 0.25em 0;
+            height: 1em;
+            top: 1.3em;
+            left: 0.6em;
+            margin-top: -1em;
+            transform: rotate(45deg);
+            width: 0.5em;
+        }
     </style>
 </head>
 
@@ -128,12 +156,37 @@
                 <input v-model="message">
             </div>
 
+            <hr>
+
+
+            <div id="app-7">
+                <div>
+                    This is a simple todolist from: https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+                </div>
+                <ul>
+                    <li>Buy milk - List from mozilla dev network</li>
+                    <li>Take the dog for a walk</li>
+                    <li>Exercise</li>
+                    <li>Write code</li>
+                    <li>Play music</li>
+                    <li>Relax</li>
+                </ul>
+            </div>
+
 
             <hr>
 
         </div>
     </div>
     <script src="js/app.js"></script>
+    <script>
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('done');
+        }
+        }, false);
+    </script>
 </body>
 
 </html>
